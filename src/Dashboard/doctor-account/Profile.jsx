@@ -177,7 +177,7 @@ const Profile = ({ doctorData }) => {
             value={formData.name}
             onChange={handleInputChange}
             placeholder="Full Name"
-            className="form__input"
+            className="form__input bg-orange-50 outline-none border-none"
           />
         </div>
         <div className="mb-5">
@@ -188,7 +188,7 @@ const Profile = ({ doctorData }) => {
             value={formData.email}
             // onChange={handleInputChange}
             placeholder="Email"
-            className="form__input"
+            className="form__input bg-orange-50 outline-none border-none"
             aria-readonly
             readOnly
             disabled="true"
@@ -202,7 +202,7 @@ const Profile = ({ doctorData }) => {
             value={formData.phone}
             onChange={handleInputChange}
             placeholder="Phone Number"
-            className="form__input"
+            className="form__input bg-orange-50 outline-none border-none"
           />
         </div>
         <div className="mb-5">
@@ -213,7 +213,7 @@ const Profile = ({ doctorData }) => {
             value={formData.bio}
             onChange={handleInputChange}
             placeholder="Bio"
-            className="form__input"
+            className="form__input bg-orange-50 outline-none border-none"
             maxLength={100}
           />
         </div>
@@ -226,7 +226,7 @@ const Profile = ({ doctorData }) => {
                 name="gender"
                 value={formData.gender}
                 onChange={handleInputChange}
-                className="form__input py-3.5"
+                className="form__input py-3.5 bg-orange-50 outline-none border-none"
               >
                 <option value="">Select</option>
                 <option value="male">Male</option>
@@ -240,7 +240,7 @@ const Profile = ({ doctorData }) => {
                 name="specialization"
                 value={formData.specialization}
                 onChange={handleInputChange}
-                className="form__input py-3.5"
+                className="form__input py-3.5 bg-orange-50 outline-none border-none"
               >
                 <option value="">Select</option>
                 <option value="psychiatrist">psychiatrist</option>
@@ -249,14 +249,14 @@ const Profile = ({ doctorData }) => {
               </select>
             </div>
             <div>
-              <p className="form__label">Ticket Price</p>
+              <p className="form__label ">Fees</p>
               <input
                 type="number"
                 name="ticketPrice"
                 value={formData.ticketPrice}
                 onChange={handleInputChange}
                 placeholder="100"
-                className="form__input"
+                className="form__input bg-orange-50 outline-none border-none"
               />
             </div>
           </div>
@@ -274,7 +274,7 @@ const Profile = ({ doctorData }) => {
                       type="date"
                       name="startingDate"
                       value={item.startingDate}
-                      className="form__input"
+                      className="form__input bg-orange-50"
                       onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
@@ -284,7 +284,7 @@ const Profile = ({ doctorData }) => {
                       type="date"
                       name="endingDate"
                       value={item.endingDate}
-                      className="form__input"
+                      className="form__input bg-orange-50"
                       onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
@@ -296,7 +296,7 @@ const Profile = ({ doctorData }) => {
                       type="text"
                       name="degree"
                       value={item.degree}
-                      className="form__input"
+                      className="form__input bg-orange-50"
                       onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
@@ -306,7 +306,7 @@ const Profile = ({ doctorData }) => {
                       type="text"
                       name="university"
                       value={item.university}
-                      className="form__input"
+                      className="form__input bg-orange-50"
                       onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
@@ -416,7 +416,7 @@ const Profile = ({ doctorData }) => {
                     <select
                       value={item.day}
                       name="day"
-                      className="form__input py-3.5"
+                      className="form__input py-3.5 bg-orange-50 outline-none border-none"
                       onChange={(e) => handleTimeSlotsChange(e, index)}
                     >
                       <option value="">Select</option>
@@ -435,7 +435,7 @@ const Profile = ({ doctorData }) => {
                       type="time"
                       name="startingTime"
                       value={item.startingTime}
-                      className="form__input"
+                      className="form__input bg-orange-50 outline-none border-none"
                       onChange={(e) => handleTimeSlotsChange(e, index)}
                     />
                   </div>
@@ -445,7 +445,7 @@ const Profile = ({ doctorData }) => {
                       type="time"
                       name="endingTime"
                       value={item.endingTime}
-                      className="form__input"
+                      className="form__input bg-orange-50 outline-none border-none"
                       onChange={(e) => handleTimeSlotsChange(e, index)}
                     />
                   </div>
@@ -480,7 +480,7 @@ const Profile = ({ doctorData }) => {
             value={formData.about}
             placeholder="Write your bio"
             onChange={handleInputChange}
-            className="form__input"
+            className="form__input bg-orange-50 outline-none border-none"
           ></textarea>
         </div>
 
@@ -512,7 +512,7 @@ const Profile = ({ doctorData }) => {
               htmlFor="customFile"
               className="absolute top-0 left-0 w-full h-full flex items-center
                     px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden
-                    bg-[#0066ff46] text-headingColor font-semibold
+                    bg-orange-100 text-headingColor font-semibold
                     rounded-lg truncate cursor-pointer"
             >
               Upload Photo

@@ -15,7 +15,7 @@ const Contact = () => {
               type="email"
               id="email"
               placeholder="example@gmail.com"
-              className="form__input mt-1"
+              className="form__input mt-1 bg-orange-50 outline-none border-none"
             />
           </div>
           <div>
@@ -26,7 +26,7 @@ const Contact = () => {
               type="text"
               id="subject"
               placeholder="write the subject or title"
-              className="form__input mt-1"
+              className="form__input mt-1 bg-orange-50 outline-none border-none"
             />
           </div>
           <div className="sm:col-span-2">
@@ -37,7 +37,7 @@ const Contact = () => {
               rows="6"
               id="message"
               placeholder="your message here"
-              className="form__input mt-1"
+              className="form__input mt-1 bg-orange-50 outline-none border-none"
             />
           </div>
           <button type="submit" className="btn rounded sm:w-fit bg-orange-950">

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary";
 import { BASE_URL, token } from "../../config";
 import { toast } from "react-toastify";
-import HashLoader from "react-spinners/HashLoader";
+import { DotLoader } from "react-spinners";
 
 const Profile = ({ user }) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -86,7 +86,7 @@ const Profile = ({ user }) => {
             value={formData.name}
             onChange={handleInputChange}
             placeholder="FullName"
-            className="w-full p-4 py-3 border-b border0[#0066ff61]
+            className=" bg-orange-50 outline-none border-none w-full p-4 py-3 border-b border0[#0066ff61]
               focus:outline-none focus:border-b-primaryColor text-base
               leading-7 text-headingColor placeholder:text-textColor
               rounded-md cursor-pointer"
@@ -99,7 +99,7 @@ const Profile = ({ user }) => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="Email"
-            className="w-full p-4 py-3 border-b border0[#0066ff61]
+            className="bg-orange-50 outline-none border-none w-full p-4 py-3 border-b border0[#0066ff61]
               focus:outline-none focus:border-b-primaryColor text-base
               leading-7 text-headingColor placeholder:text-textColor
               rounded-md cursor-pointer"
@@ -114,7 +114,7 @@ const Profile = ({ user }) => {
             value={formData.password}
             onChange={handleInputChange}
             placeholder="Password"
-            className="w-full p-4 py-3 border-b border0[#0066ff61]
+            className="bg-orange-50 outline-none border-none w-full p-4 py-3 border-b border0[#0066ff61]
               focus:outline-none focus:border-b-primaryColor text-base
               leading-7 text-headingColor placeholder:text-textColor
               rounded-md cursor-pointer"
@@ -128,7 +128,7 @@ const Profile = ({ user }) => {
             value={formData.bloodType}
             onChange={handleInputChange}
             placeholder="Blood Type"
-            className="w-full p-4 py-3 border-b border0[#0066ff61]
+            className="w-full p-4 py-3 border-b border0[#0066ff61] bg-orange-50 outline-none border-none
               focus:outline-none focus:border-b-primaryColor text-base
               leading-7 text-headingColor placeholder:text-textColor
               rounded-md cursor-pointer"
@@ -145,8 +145,8 @@ const Profile = ({ user }) => {
               name="gender"
               value={formData.gender}
               onChange={handleInputChange}
-              className="text-textColor font-semibold text-[15px]
-                leading-7 ml-3 rounded-lg px-4 py-3 focus:outline-none"
+              className="text-textColor font-semibold text-[15px] 
+                leading-7 ml-3 rounded-lg px-4 py-3 focus:outline-none bg-orange-50 outline-none border-none"
             >
               {/* <option value="">Select</option> */}
               <option value="male">Male</option>
@@ -196,7 +196,7 @@ const Profile = ({ user }) => {
             className="w-full bg-orange-950 text-white
               text-[18px] leading-[30px] rounded-lg px-4 py-3"
           >
-            {loading ? <HashLoader size={25} color="#fff" /> : "Update Profile"}
+            {loading ? <DotLoader size={25} color="#fff" /> : "Update Profile"}
           </button>
         </div>
       </form>
