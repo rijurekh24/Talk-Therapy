@@ -17,7 +17,7 @@ const Dashboard = () => {
   );
 
   const [tab, setTab] = useState("overview");
-  console.log("Data:", data); // Log the complete data object
+  // console.log("Data:", data); // Log the complete data object
 
   return (
     <section className="my-10">

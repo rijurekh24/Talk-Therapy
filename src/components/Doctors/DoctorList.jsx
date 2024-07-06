@@ -13,7 +13,7 @@ const DoctorList = () => {
   } = useFecthData(`${BASE_URL}/doctors`, {
     headers: { "Cache-Control": "no-cache" },
   });
-  console.log(doctors);
+
   return (
     <>
       {loading && <Loading />}

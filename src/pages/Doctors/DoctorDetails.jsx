@@ -60,7 +60,7 @@ const DoctorDetails = () => {
                 lg:px-6 text-[12px] leading-4 lg:text-base lg:leading-7
                 font-semibold rounded"
                   >
-                    Psychiatrist
+                    Md, Psychiatry
                   </span>
                   <h3
                     className="text-headingColor text-[22px] leading-9

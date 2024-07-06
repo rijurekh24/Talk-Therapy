@@ -244,8 +244,8 @@ const Profile = ({ doctorData }) => {
               >
                 <option value="">Select</option>
                 <option value="psychiatrist">psychiatrist</option>
-                <option value="psychiatrist">psychiatrist</option>
-                <option value="psychiatrist">psychiatrist</option>
+                {/* <option value="psychiatrist">psychiatrist</option>
+                <option value="psychiatrist">psychiatrist</option> */}
               </select>
             </div>
             <div>

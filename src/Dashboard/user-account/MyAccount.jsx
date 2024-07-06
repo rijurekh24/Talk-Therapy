@@ -24,7 +24,7 @@ const MyAccount = () => {
     error,
   } = useGetProfile(`${BASE_URL}/users/profile/me`);
 
-  console.log(userData, "userData");
+  // console.log(userData, "userData");
 
   return (
     <div className="max-w-[1170px] px-5 mx-auto my-10">
