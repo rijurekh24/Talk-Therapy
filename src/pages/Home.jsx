@@ -61,7 +61,7 @@ const Home = () => {
                     1+
                   </h2>
                   <span
-                    className="w-[100px] h-2 bg-orange-300 rounded-full
+                    className="w-[100px] h-2 bg-orange-200 rounded-full
                       block mt-[-14px]"
                   ></span>
                   <p className="text__para">Years of Experience</p>
@@ -75,7 +75,7 @@ const Home = () => {
                     100%
                   </h2>
                   <span
-                    className="w-[100px] h-2 bg-orange-300 rounded-full
+                    className="w-[100px] h-2 bg-orange-200 rounded-full
                       block mt-[-14px]"
                   ></span>
                   <p className="text__para">Patient Satisfaction</p>
