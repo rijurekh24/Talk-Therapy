@@ -3,6 +3,7 @@ import noPhoto from "../../assets/images/no-photo.jpg";
 import { NavLink, Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { authContext } from "../../context/AuthContext";
+import Logo from "../../assets/images/Screenshot 2024-01-26 004549.png";
 
 const navLinks = [
   {
@@ -50,14 +51,31 @@ const Header = () => {
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
   return (
-    <header className="header flex items-center bg-orange-100	" ref={headerRef}>
+    <header
+      className="header flex items-center bg-orange-100	h-20"
+      ref={headerRef}
+    >
       <div className="container">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div>
-            <p className="text-orange-950 text-[26px] leading-7 font-serif font-[600] font-bold	">
-              Talk Therapy
-            </p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={Logo}
+              className="w-10 mr-2"
+              alt=""
+              style={{ mixBlendMode: "darken" }}
+            />
+            <div>
+              <p className="text-orange-950 text-[26px] leading-7 font-serif font-[600] font-bold	">
+                Talk Therapy
+              </p>
+            </div>
           </div>
           {/* ####### Menu ######## */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
