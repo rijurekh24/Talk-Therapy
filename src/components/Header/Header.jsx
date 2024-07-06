@@ -92,13 +92,23 @@ const Header = () => {
                       : "users/profile/me"
                   }`}
                 >
-                  <figure className="w-[35px] h-[35px] rounded-full">
-                    <img
-                      src={user?.photo || noPhoto}
-                      alt="Logo"
-                      className="w-full h-full rounded-full"
-                    />
-                  </figure>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    {" "}
+                    <figure className="w-[50px] h-[50px] rounded-full">
+                      <img
+                        src={user?.photo || noPhoto}
+                        alt="Logo"
+                        className="w-full h-full rounded-full"
+                      />
+                    </figure>
+                    <p className="ml-2">{user?.name}</p>
+                  </div>
                   {/* <h2>{user?.name}</h2> */}
                 </Link>
               </div>

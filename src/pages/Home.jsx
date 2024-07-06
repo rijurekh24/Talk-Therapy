@@ -34,10 +34,12 @@ const Home = () => {
                   We help patients live a happy, longer life.
                 </h1>
                 <p className="text__para">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Consectetur mollitia eveniet ipsum aperiam illum. Fuga quam
-                  assumenda repellendus enim tempore facilis, error veniam,
-                  vitae, tempora nostrum quaerat similique repellat. Aperiam?
+                  Welcome to Mindful Healing, your trusted resource for
+                  depression and anxiety treatment. Our experienced
+                  professionals offer personalized therapy and support,
+                  dedicated to helping you achieve emotional well-being through
+                  evidence-based practices and holistic approaches. Take the
+                  first step towards healing today.
                 </p>
                 <Link to="/doctors">
                   <button className="btn bg-orange-950">
@@ -48,7 +50,7 @@ const Home = () => {
 
               {/* hero counter */}
               <div
-                className="mt-[20px] lg:mt-[40px] flex flex-col lg:flex-row
+                className="mt-[15px] lg:mt-[30px] flex flex-col lg:flex-row
                   lg:items-center gap-5 lg:gap-[30px]"
               >
                 <div>
@@ -223,12 +225,6 @@ const Home = () => {
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">What our patients says</h2>
-            <p className="text__para text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-              aliquid quibusdam perferendis <br></br>
-              quam ullam optio impedit fuga, vitae enim reiciendis! Soluta quae
-              rem natus perspiciatis
-            </p>
           </div>
           <Testimonial />
         </div>
