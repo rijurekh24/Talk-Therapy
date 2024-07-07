@@ -3,7 +3,7 @@ import convertTime from "../../utils/convertTime";
 import { BASE_URL, token } from "../../config";
 import { toast } from "react-toastify";
 
-const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
+const SidePanel = ({ doctorId, ticketPrice, timeSlots = [] }) => {
   const bookingHandler = async () => {
     try {
       const res = await fetch(
@@ -28,14 +28,12 @@ const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
       toast.error(err.message);
     }
   };
+
   return (
     <div className="shadow-panelShadow p-3 lg:p-5 rounded-md">
       <div className="flex items-center justify-between">
-        <p className="text__para mt-0 font-semibold">Ticket Price</p>
-        <span
-          className="text-base leading-7 lg:text-[22px]
-            lg:leading-8 text-headingColor font-bold"
-        >
+        <p className="text__para mt-0 font-semibold">Fees</p>
+        <span className="text-base leading-7 lg:text-[22px] lg:leading-8 text-headingColor font-bold">
           {ticketPrice} INR
         </span>
       </div>
@@ -45,19 +43,43 @@ const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
           Available Time At:
         </p>
 
-        <ul className="mt-3">
-          {timeSlots?.map((item, index) => (
-            <li key={index} className="flex items-center justify-between mb-2">
+        {timeSlots.length > 0 ? (
+          <ul className="mt-3">
+            {timeSlots.map((item, index) => (
+              <li
+                key={index}
+                className="flex items-center justify-between mb-2"
+              >
+                <p className="text-[15px] leading-6 text-textColor font-semibold">
+                  {item.day.charAt(0).toUpperCase() + item.day.slice(1)}
+                </p>
+                <p className="text-[15px] leading-6 text-textColor font-semibold">
+                  {convertTime(item.startingTime)} -{" "}
+                  {convertTime(item.endingTime)}
+                </p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <ul className="mt-3">
+            <li className="flex items-center justify-between mb-2">
               <p className="text-[15px] leading-6 text-textColor font-semibold">
-                {item.day.charAt(0).toUpperCase() + item.day.slice(1)}
+                Tuesday
               </p>
               <p className="text-[15px] leading-6 text-textColor font-semibold">
-                {convertTime(item.startingTime)} -{" "}
-                {convertTime(item.endingTime)}
+                4.00 pm - 8.00 pm
               </p>
             </li>
-          ))}
-        </ul>
+            <li className="flex items-center justify-between mb-2">
+              <p className="text-[15px] leading-6 text-textColor font-semibold">
+                Saturday
+              </p>
+              <p className="text-[15px] leading-6 text-textColor font-semibold">
+                4.00 pm - 8.00 pm
+              </p>
+            </li>
+          </ul>
+        )}
       </div>
       <button
         onClick={bookingHandler}

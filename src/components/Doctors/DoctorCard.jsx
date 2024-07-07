@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const DoctorCard = ({ doctor }) => {
   const {
     name,
-    avgRating,
+    averageRating,
     photo,
     specialty,
     specialization,
@@ -21,7 +21,7 @@ const DoctorCard = ({ doctor }) => {
   return (
     <div className="p-3 lg:p-5">
       <div>
-        <img src={photo} alt="" className="w-full" />
+        <img src={photo} alt="" className="w-50 rounded-lg" />
       </div>
 
       <h3
@@ -44,7 +44,7 @@ const DoctorCard = ({ doctor }) => {
             className="flex items-center gap-[6px] text-[14px] leading-6
                 lg:text-[16px] lg:leading-7 font-semibold text-headingColor"
           >
-            <img src={starIcon} alt="" /> {avgRating}
+            <img src={starIcon} alt="" /> {averageRating}
           </span>
           <span
             className="text-[14px] leading-6

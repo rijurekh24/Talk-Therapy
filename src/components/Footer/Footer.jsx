@@ -68,7 +68,10 @@ const Footer = () => {
         md:flex-row flex-wrap gap-[30px]"
         >
           <div>
-            <p className="text-orange-950 text-[26px] leading-7 font-serif font-[600] font-bold	">
+            <p
+              className="text-orange-950 text-[26px] leading-7  font-[600] font-bold	"
+              style={{ fontFamily: "cursive" }}
+            >
               Relievescape
             </p>
             <p

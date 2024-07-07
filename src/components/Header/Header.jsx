@@ -28,6 +28,7 @@ const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const { user, role, token } = useContext(authContext);
+  console.log(user);
 
   const handleStickyHeader = () => {
     window.addEventListener("scroll", () => {
@@ -72,7 +73,10 @@ const Header = () => {
               style={{ mixBlendMode: "darken" }}
             />
             <div>
-              <p className="text-orange-950 text-[26px] leading-7 font-serif font-[600] font-bold	">
+              <p
+                className="text-orange-950 text-[26px] leading-7  font-[600] font-bold	"
+                style={{ fontFamily: "cursive" }}
+              >
                 Talk Therapy
               </p>
             </div>

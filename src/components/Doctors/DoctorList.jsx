@@ -14,6 +14,7 @@ const DoctorList = () => {
     headers: { "Cache-Control": "no-cache" },
   });
 
+  console.log(doctors);
   return (
     <>
       {loading && <Loading />}

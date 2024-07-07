@@ -67,10 +67,22 @@ const MyAccount = () => {
               >
                 Blood Type:
                 <span
-                  className="ml-2 text-headingColor text-[22px]
+                  className="ml-2 text-headingColor text-[18px]
                         leading-8"
                 >
                   {userData.bloodType}
+                </span>
+              </p>
+              <p
+                className="text-textColor text-[15px] leading-6
+                    font-medium"
+              >
+                Age:
+                <span
+                  className="ml-2 text-headingColor text-[18px]
+                        leading-8"
+                >
+                  {userData?.ageType}
                 </span>
               </p>
             </div>

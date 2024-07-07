@@ -24,6 +24,7 @@ const Profile = ({ user }) => {
       photo: user.photo,
       gender: user.gender,
       bloodType: user.bloodType,
+      ageType: user.ageType,
     });
   }, [user]);
 
@@ -128,6 +129,19 @@ const Profile = ({ user }) => {
             value={formData.bloodType}
             onChange={handleInputChange}
             placeholder="Blood Type"
+            className="w-full p-4 py-3 border-b border0[#0066ff61] bg-orange-50 outline-none border-none
+              focus:outline-none focus:border-b-primaryColor text-base
+              leading-7 text-headingColor placeholder:text-textColor
+              rounded-md cursor-pointer"
+          />
+        </div>
+        <div className="mb-5">
+          <input
+            type="text"
+            name="ageType"
+            value={formData.ageType}
+            onChange={handleInputChange}
+            placeholder="Age"
             className="w-full p-4 py-3 border-b border0[#0066ff61] bg-orange-50 outline-none border-none
               focus:outline-none focus:border-b-primaryColor text-base
               leading-7 text-headingColor placeholder:text-textColor

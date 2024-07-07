@@ -49,9 +49,9 @@ const DoctorDetails = () => {
         {!loading && !error && (
           <div className="grid md:grid-cols-3 gap-[50px]">
             <div className="md:col-span-2">
-              <div className="flex items-center gap-5">
+              <div className="flex items-center gap-6">
                 <figure className="max-w-[200px] max-h-[200px]">
-                  <img src={photo} alt="" className="w-full" />
+                  <img src={photo} alt="" className="w-full rounded-lg" />
                 </figure>
 
                 <div>

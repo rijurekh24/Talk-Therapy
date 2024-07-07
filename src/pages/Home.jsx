@@ -29,9 +29,9 @@ const Home = () => {
               <div className="lg:w-[570px]">
                 <h1
                   className="text-[36px] leading-[30px] text-headingColor
-                    font-[800] md:text-[50px] md:leading-[70px]"
+                    font-[800] md:text-[45px] md:leading-[70px]"
                 >
-                  We help patients live a happy, longer life.
+                  Calm down, It'll be fine, let us help you out!
                 </h1>
                 <p className="text__para">
                   Welcome to Mindful Healing, your trusted resource for
